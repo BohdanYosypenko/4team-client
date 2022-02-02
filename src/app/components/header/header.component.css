@@ -1,0 +1,30 @@
+mat-toolbar{
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.signin-icon{    
+    margin-right: 5px;
+}
+
+.signin-btn{
+    background-color: #83be5b ;
+}
+
+.signin-text{
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.header-container{
+    width: 100%;
+    margin: 0 40px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+.header-logo{
+    height: 40px;
+    width: auto;
+}
