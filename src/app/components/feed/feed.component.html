@@ -1,0 +1,27 @@
+<div class="feed-container">
+    <div class="feed-filters">
+        <div (click)="selectFilter(1)"
+             class="feed-filter-item"
+             [class.selected]="selectedId==1">filter</div>
+        <div (click)="selectFilter(2)" 
+             class="feed-filter-item"
+             [class.selected]="selectedId==2">filter21 aa</div>
+        <div (click)="selectFilter(3)" 
+             class="feed-filter-item"
+             [class.selected]="selectedId==3">abv</div>
+    </div>          
+    <div class="feed-header">
+        <mat-chip-list aria-label="Fish selection">
+            <mat-chip>One fish</mat-chip>
+            <mat-chip>Two fish</mat-chip>
+            <mat-chip color="primary" selected>Primary fish</mat-chip>
+            <mat-chip color="accent" selected>Accent fish</mat-chip>
+            <mat-chip>fish</mat-chip>
+            <mat-chip>Two fish</mat-chip>
+            <mat-chip color="primary" selected>fish</mat-chip>
+            <mat-chip color="accent" selected>Accent fish</mat-chip>
+        </mat-chip-list>
+    </div>
+    <div class="feed-content">  
+    </div>
+</div>

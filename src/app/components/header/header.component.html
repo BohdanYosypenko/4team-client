@@ -1,15 +1,17 @@
 <mat-toolbar>
     <div class="header-container">
-        <div class="logo-container">
-            <img class="header-logo" src="assets\img\logo\4T_logo.svg" alt="4T logo">
+        <img class="header-logo" src="assets\img\logo\4T_logo.svg" alt="4T logo">        
+        <div class="signin-btns">
+            <button routerLink="chat"  mat-button class="signin-container">
+                <span class="signin-text">
+                Login
+                </span>                      
+            </button>
+            <button routerLink="admin" mat-button class="signin-container">
+                <span class="signup-text">
+                Register
+                </span>                      
+            </button>
         </div>
-        <button mat-button class="signin-container">
-            <span class="signin-text">
-               Signin
-            </span>
-            <button class="signin-btn" mat-mini-fab aria-label="Signin">
-                <mat-icon class="signin-icon">login</mat-icon>
-            </button>            
-        </button>
     </div>
 </mat-toolbar>
