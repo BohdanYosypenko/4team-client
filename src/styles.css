@@ -9,3 +9,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     width: 100%;
     margin: 0 auto;    
 }
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

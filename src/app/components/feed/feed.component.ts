@@ -10,16 +10,17 @@ import { ApiService } from 'src/app/services/api/api.service';
 export class FeedComponent implements OnInit {
 
   selectedId: number = 0;
+  sportLookups:any;
 
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getEntity(Controllers.SportLookup).subscribe(res => this.sportLookups = res);
   }
 
   selectFilter(id:number)
   {
     this.selectedId = id;
-    console.log(id);
   }  
 
 }

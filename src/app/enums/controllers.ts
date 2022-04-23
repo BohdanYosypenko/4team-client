@@ -2,5 +2,6 @@ export enum Controllers {
     LookupCategory = 'lookupcategory',
     SportCategory = 'sportcategory',
     SportLookup = 'sportlookup',
-    SportType = 'sporttype'
+    SportType = 'sporttype',
+    SportTypeByCategory = 'sporttype/category'
   }
