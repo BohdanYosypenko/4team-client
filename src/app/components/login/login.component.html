@@ -1,13 +1,18 @@
-<div class="login" [formGroup]="LoginForm">
-    <mat-form-field appearance="fill">
-        <mat-label>Username</mat-label>
-        <input matInput formControlName="username">
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-        <mat-label>Password</mat-label>
-        <input matInput formControlName="password">
-    </mat-form-field>
-    <button mat-raised-button
-        color="warn" (click)="login()">Test
-    </button> 
+<div class="login-container" [formGroup]="LoginForm">
+    <mat-card>
+        <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="username">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password">
+        </mat-form-field>
+        <button mat-raised-button
+            color="primary" (click)="login()">Login
+        </button>
+        <button mat-raised-button
+            color="warn" (click)="login()">Cancel
+        </button>
+    </mat-card> 
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppState } from 'src/app/app.state';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  user: any;
+
+  constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
-  }
+    this.store.select('account').subscribe((res=>{this.user = res;
+      console.log(this.user[0].username)}))
+  }  
+
 
 }

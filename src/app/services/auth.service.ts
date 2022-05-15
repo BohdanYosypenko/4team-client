@@ -14,4 +14,8 @@ export class AuthService {
   login(username:string, password:string ):Observable<any> {
     return this.http.post(`${environment.BASEURL}/account`, {username, password});
   }
+
+  register(username:string, email:string, password:string ):Observable<any> {
+    return this.http.post(`${environment.BASEURL}/account/register`, {username, email, password});
+  }
 }

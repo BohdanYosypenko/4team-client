@@ -1,13 +1,20 @@
 <mat-toolbar>
     <div class="header-container">
-        <img class="header-logo" src="assets\img\logo\4T_logo.svg" alt="4T logo">        
+        <a href="/">
+            <img class="header-logo" src="assets\img\logo\4T_logo.svg" alt="4T logo"> 
+        </a>       
         <div class="signin-btns">
-            <button routerLink="login"  mat-button class="signin-container">
+            <button *ngIf="user.length !== 0"  mat-button class="signin-container">
+                <span class="signin-text">
+                {{user[0]?.username}}
+                </span>                      
+            </button>
+            <button *ngIf="user.length === 0" routerLink="login"  mat-button class="signin-container">
                 <span class="signin-text">
                 Login
                 </span>                      
             </button>
-            <button routerLink="register" mat-button class="signin-container">
+            <button *ngIf="user.length === 0" routerLink="register" mat-button class="signin-container">
                 <span class="signup-text">
                 Register
                 </span>                      

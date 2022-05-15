@@ -1,1 +1,22 @@
-<p>register works!</p>
+<div class="register-container" [formGroup]="RegisterForm">
+    <mat-card>
+        <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="username">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password">
+        </mat-form-field>
+        <button mat-raised-button
+            color="primary" (click)="register()">Register
+        </button>
+        <button mat-raised-button
+            color="warn" (click)="register()">Cancel
+        </button>
+    </mat-card> 
+</div>
